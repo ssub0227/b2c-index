@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* main.css */
+
+/* 배너 영역 */
+.banner{
+  background: rgba(0, 104, 193, 0.05) url(../images/banner.png) no-repeat center/cover;
+  height: 510px;
+}
+
+.banner .container{
+  position: relative;
+}
+
+.banner-text{
+  position: absolute;
+  top: 217px;
+  left: 160px;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.banner-text-bold{
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 46px;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.5;
+}
+
+/* 마켓 영역 */
+.market{
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+
+.market-top.dt{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 마켓 상단 리스트 */
+.market-top-list{
+  display: flex;
+}
+
+
+.market-top-list a{
+  display: block;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: center;
+  margin-right:10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 35px;
+}
+
+
+.market-top-list img{
+  margin-left: 5px;
+}
+.market-top-list li.active a{
+  background-color: #1b1e57;
+  color: #fff;
+}
+
+/* 마켓 상단 검색창 */
+.market-top-search{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin-left: auto;
+  width: 303px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  color: #8e8e8e;
+  font-size: 16px;
+  letter-spacing: -1px;
+  height: 40px;
+  line-height: 40;
+}
+
+.market-top-search input[type="text"]{
+  border: none;
+  cursor: text;
+}
+
+.market-top-search img{
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+/* 마켓 하단 테이블 영역 */
+.market-table{
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+.market-table thead{
+  display: block;
+}
+
+
+.market-table tbody{
+  display: block;
+  overflow-y: scroll;
+}
+
+.market-table tbody::-webkit-scrollbar{
+  width:5px;
+  background-color: transparent;
+}
+
+.market-table tbody::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.market-table tbody::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+.market-table tr{
+  display: block;
+  height: 55px;
+  text-align: right;
+  padding-top: 15px;
+  background-color: #fff;
+}
+
+.table-tit{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.market-table tr:nth-child(2n){
+  background-color: #fafbff;
+}
+
+.market-table th{
+  font-size: 16px;
+}
+
+.market-table td{
+  font-size: 14px;
+}
+
+.market-table td, .market-table th{
+  vertical-align: middle;
+}
+
+.market-table td:first-child, .market-table th:first-child{
+  text-align: left;
+}
+
+.market-table td:first-child{
+  position: relative;
+  padding-left: 20px;
+}
+
+tbody td:nth-child(1), thead th:nth-child(1){
+  width: 295px;
+}
+
+tbody td:nth-child(2), thead th:nth-child(2){
+  width: 192px;
+}
+
+tbody td:nth-child(3), thead th:nth-child(3){
+  width: 192px;
+}
+
+tbody td:nth-child(4), thead th:nth-child(4){
+  width: 256px;
+}
+
+tbody td:nth-child(5), thead th:nth-child(5){
+  width: 256px;
+}
+
+tbody td:nth-child(6), thead th:nth-child(6){
+  width: 90px;
+}
+
+.market-table img{
+  vertical-align: middle;
+}
+
+.sort-icon.active{
+  transform: rotate(180deg);
+}
+
+.star-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.star-icon:first-child{
+  z-index: 1;
+}
+
+.star-icon.active{
+  display: none;
+}
+
+.market-table th:first-child{
+  padding-left: 62px;
+}
+
+.market-table td:last-child, .market-table th:last-child{
+  text-align: center;
+}
+
+.table-coin-name{
+  color: #222;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.coin-unit{
+  color: #8e8e8e;
+  font-weight: normal;
+}
+
+.table-price{
+  color: #222;
+  font-weight: bold;
+}
+
+.table-coinup .table-updown{
+  color: #52b370;
+}
+
+.table-coindown .table-updown{
+  color: #d32f2f;
+}
+
+
+.table-btc-icon{
+  margin-right: 5px;
+  margin-left: 40px;
+}
+
+
+/* 컨텐츠 영역 - 가치 영역 */
+.value-tit{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.value{
+  padding: 50px 0;
+}
+
+.value-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4%;
+}
+
+.value-list li{
+  text-align: center;
+  margin-bottom:40px;
+  margin-right:60px;
+  padding: 21px 56px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.03);
+}   
+
+.value-list li:nth-child(3n){
+  margin-right:0;
+}
+
+.value-sub-tit{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin:10px 0;
+}
+
+.value-list p{
+  font-size: 14px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #8e8e8e;
+  line-height: 1.5;
+}
+
+/* 컨텐츠 영역 - 어플리케이션 영역 */
+.application{
+  background-color: #25263d;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.application > *{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.application-tit{
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.application-text{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  margin:15px 0 30px 0;
+}
+
+/* 어플리케이션 다운로드 버튼 */
+.dwld-list{
+  display: flex;
+  justify-content: center;
+}
+
+.dwld-list li{
+  background: #fff;
+  border-radius: 30px;
+}
+
+.dwld-list li:first-child{
+  margin-right: 10px;
+}
+
+.dwld-list a{
+  padding: 12px 35px;
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+.dwld-list img{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+/* 미디어쿼리 1024 */
+@media only screen and (max-width:1024px){
+  .value-list li{
+    margin-right: 20px;
+    width: 48%;
+  }
+
+  .value-list li:nth-child(3n){
+    margin-right: 20px;
+  }
+
+  .value-list li:nth-child(2n){
+    margin-right: 0;
+  }
+}
+
+/* 미디어쿼리 768 */
+@media only screen and (max-width:768px){
+  .banner{
+    height: 300px;
+    max-height: 100%;
+  }
+
+  .banner-text{
+    top: 100px;
+    left: 70px;
+    font-size: 20px;
+  }
+
+  .banner-text-bold{
+    font-size: 33px;
+  }
+
+  .market-top.mb{
+    width: 100%;
+  } 
+
+  .market-top.dt{
+    display: none;
+  }
+
+  .market-select-list{
+    display: flex;
+  }
+  
+  .market-select-list li{
+    padding: 15px;
+  }
+
+  .market-select-list li:first-child{
+    padding-left: 0;
+  }
+  
+  .market-select-list li.active a{
+    font-weight: 700;
+  }
+
+  .market-top-search{
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .market-top-search input[type="text"]{
+    width: 100%;
+  }
+
+  .market-list{
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .market-list > li{
+    padding: 15px;
+  }
+
+  .market-list > li:nth-child(2n){
+    background-color: #fafbff;
+  }
+
+  .market-list-sub img{
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+
+  .market-list-sub li{
+    display: flex;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+
+  .coin-price, .table-updown{
+    margin-left: auto;
+  }
+
+  .coin-unit{
+    margin-left: 5px;
+  }
+
+  .trade-btn{
+    display: block;
+    width: 100%;
+    border: 1px solid #25263d;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 30px;
+  }
+  .value-list{
+    padding: 0;
+  }
+
+  .value-list p{
+    font-size: 13px;
+  }
+
+  .value-list li{
+    margin-bottom: 20px;
+  }
+
+  .value-list li:last-child{
+    margin-bottom: 0;
+  }
+
+  .value-list li:nth-child(3n){
+    margin-right: 20px;
+  }
+
+} /* 미디어쿼리 768 */
+
+/* 미디어쿼리 600 */
+@media only screen and (max-width:600px){
+  .value-list li{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .value-list li:nth-child(3n){
+    margin-right: 0px;
+  }
+}
+
+/* 미디어쿼리 500 */
+@media only screen and (max-width:500px){
+  .banner{
+    background: rgba(0, 104, 193, 0.05) url(../images/banner_mb.png) no-repeat center/cover;
+  }
+
+  .banner-text{
+    top: 110px;
+    left: 45px;
+    font-size: 16px;
+    text-shadow: 0px 0px 3px #666;
+  }
+
+  .banner-text-bold{
+    font-size: 24px;
+    margin-top: 8px;
+  }
+
+  .dwld-list a{
+    padding: 12px 25px;
+  }
+}

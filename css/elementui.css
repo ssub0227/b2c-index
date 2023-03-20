@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* element ui.css */
+
+/************************************************************ header ********************************************/
+/* 언어 선택 박스 */
+.base-b2c header .el-input__inner{
+  background-color: transparent;
+  border: none;
+}
+
+.base-b2c header .el-scrollbar{
+  width: 200px;
+}
+
+.base-b2c header .el-input.el-input--suffix{
+  width: 90px;
+}
+
+.base-b2c header .el-icon-arrow-up:before{
+  content: url(../images/select_white_icon.svg);
+  position: relative;
+  top: -2px;
+}
+
+.base-b2c header .el-input--suffix .el-input__inner{
+  padding-right: 20px;
+}
+
+.header-down .el-select-dropdown__list{
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-down .el-select-dropdown__item{
+  width: 50%;
+}
+
+.header-down .popper__arrow{
+  display: none;
+}
+
+
+
+
+/* 헤더 미디어쿼리 768 */
+@media only screen and (max-width:768px){
+  .base-b2c header .el-select{
+    width: 100%;
+  }
+  
+  .base-b2c header .el-input__inner{
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+  
+  .base-b2c header .el-scrollbar{
+    width: auto;
+  }
+  
+  .header-down .el-select-dropdown__item{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .header-down .el-select-dropdown__list{
+    width: auto;
+  }
+
+  .header-down.el-select-dropdown.el-popper{
+    width: 230px;
+  }
+}/* 미디어쿼리 768 */
+
+/* 헤더 미디어쿼리 500 */
+@media only screen and (max-width:500px){
+  .header-down.el-select-dropdown.el-popper{
+    width: 190px;
+  }
+} /* 미디어쿼리 768 */
+
+
+/******************************************************* main ********************************************/
+
+/* 마켓 상단 리스트  */
+
+
+
+.base-b2c .el-tabs__item.is-top:hover{
+  color: #222;
+}
+
+.base-b2c .el-tabs__item.is-top.is-active{
+  border: none;
+  background-color: #1b1e57;
+  color: #fff;
+}
+
+
+
+
+/******************************************************* footer ********************************************/
+
+/* 푸터 중간 메뉴 */
+.base-b2c .el-collapse, .base-b2c .el-collapse-item__header, .base-b2c .el-collapse-item__wrap{
+	border: none;
+	background-color: transparent;
+}
+
+.base-b2c .el-collapse-item__header{
+	height: auto;
+	line-height: 1;
+}
+
+.base-b2c .el-collapse-item__content{
+	color: #fff;
+}
+
+.base-b2c .el-collapse-item__arrow.is-active, .base-b2c .el-collapse-item__arrow{
+	display: none;
+}
+
+.base-b2c .el-collapse-item__arrow::before{
+	content: none;
+}
+
+.base-b2c .el-collapse-item__content{
+  padding-bottom: 0;
+}
+/* 미디어쿼리 768 */
+@media only screen and (max-width:768px){
+  .base-b2c .el-collapse-item__header{
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .base-b2c .el-collapse-item__arrow.el-icon-arrow-right{
+    display: inline-block;
+    color: #fff;
+    transform: rotate(-90deg);
+  }
+
+  .base-b2c .el-collapse-item__arrow.is-active, .base-b2c .el-collapse-item__arrow{
+  display: inline-block;
+  }
+
+  .base-b2c .el-collapse-item__arrow::before{
+    content: "\e6e0";
+  }
+
+  .base-b2c .el-collapse-item__arrow.el-icon-arrow-right.is-active{
+    transform: rotate(90deg);
+  }
+  
+}
+
+
+
+
+
