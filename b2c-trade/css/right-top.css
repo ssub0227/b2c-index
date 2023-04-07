@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* left-top.css */
+
+.trade-right-top{
+  /* border: 1px solid violet; */
+  border-radius: 3px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* 상단 검색창 */
+.right-top-search{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.03);
+  display: flex;
+  padding: 15px 0 15px 20px;
+  align-items: center;
+  height: 45px;
+  line-height: 45;
+  margin: 20px 20px 10px 20px;
+}
+
+
+.right-top-search input[type="text"]{
+  border: none;
+  width: 100%;
+  cursor: text;
+  color: #8e8e8e;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.right-top-search img{
+  margin-right: 10px;
+  display: block;
+}
+
+/* 서치 초기화 버튼 */
+.search-reset{
+  display: none;
+}
+
+/* 테이블 영역 시작 */
+.right-table{
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+.right-table thead{
+  display: block;
+  background-color: #fcfcfc;
+  padding: 10px 25px 10px 20px;
+  cursor: pointer;
+  font: normal 12px/1 'Nanum Gothic', sans-serif;
+  color: #8e8e8e;
+}
+
+.right-table tbody{
+  display: block;
+  overflow-y: scroll;
+  height: 393px;
+}
+
+.right-table tbody::-webkit-scrollbar{
+  width:5px;
+  background-color: transparent;
+}
+
+.right-table tbody::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.right-table tbody::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+.right-table tbody tr{
+  display: block;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.right-table th{
+  text-align: right;
+}
+
+.right-table tr:nth-child(2n){
+  background-color: #fafbff;
+}
+
+.right-table th:first-child{
+  padding-left: 25px;
+}
+
+.right-table td, .right-table th{
+  vertical-align: middle;
+}
+
+.right-table td:first-child, .right-table th:first-child{
+  text-align: left;
+}
+
+.right-table th{
+  text-align: right;
+}
+
+.right-table td:first-child{
+  position: relative;
+  padding-left: 25px;
+}
+
+.right-table tbody td:nth-child(1), .right-table thead th:nth-child(1){
+  width: 140px;
+}
+
+.right-table tbody td:nth-child(2), .right-table thead th:nth-child(2){
+  width: 108px;
+}
+.right-table tbody td:nth-child(3), .right-table thead th:nth-child(3){
+  width: 108px;
+}
+
+.right-table tbody td:nth-child(4), .right-table thead th:nth-child(4){
+  width: 114px;
+}
+
+.right-table img{
+  vertical-align: middle;
+}
+
+.sort-icon.active{
+  transform: rotate(180deg);
+}
+
+.table-coin-name{
+  color: #222;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.coin-unit.table{
+  color: #8e8e8e;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.coin-unit.table.br{
+  display: block;
+}
+
+
+.table-price{
+  color: #222;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.table-coinup .table-updown{
+  color: #52b370;
+  font-size: 12px;
+}
+
+.table-coindown .table-updown{
+  color: #d32f2f;
+  font-size: 12px;
+}
+
+/* 테이블 즐겨찾기 별 */
+.star-icon.table{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star-icon.table:first-child{
+  z-index: 1;
+}
+
+.star-icon.table.active{
+  display: none;
+}
+
+@media only screen and (max-width:768px){
+  .trade-right-top{
+    padding-top: 15px;
+  }
+  
+  
+.right-table tbody td:nth-child(1), .right-table thead th:nth-child(1){
+  width: 156px;
+}
+
+.right-table tbody td:nth-child(2), .right-table thead th:nth-child(2){
+  width: 156px;
+}
+.right-table tbody td:nth-child(3), .right-table thead th:nth-child(3){
+  width: 156px;
+}
+
+.right-table tbody td:nth-child(4), .right-table thead th:nth-child(4){
+  width: 196px;
+}
+
+} /* 미디어쿼리 768px */
+
+@media only screen and (max-width:500px){
+  .right-table thead{
+    padding: 10px 15px 10px 10px;
+  }
+
+  .right-table tbody tr{
+    padding: 10px 10px;
+  }
+
+  .table-updown{
+    display: block;
+  }
+} /* 미디어쿼리 500px */

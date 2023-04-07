@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* left-top.css */
+
+.trade-right-bottom{
+  /* border: 1px solid orange; */
+  background-color: #ffffff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.left-bottom-first{
+  overflow: hidden;
+}
+/* 탭영역 */
+.price-count-tab{
+  display: flex;
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.price-count-tab li{
+  width: 50%;
+  font: bold 14px/1 'Nanum Gothic', sans-serif;
+  color: #222;
+}
+
+.price-count-tab li:last-child{
+  text-align: right;
+}
+
+.price-count-tab .coin-unit{
+  font: bold 14px/1 'Nanum Gothic', sans-serif;
+  color: #222;
+}
+
+
+/* 스크롤바 설정 */
+.price-count-value{
+  overflow-y: scroll;
+  height: 1006px;
+}
+
+.price-count-value::-webkit-scrollbar{
+  width:5px;
+  background-color: transparent;
+}
+
+.price-count-value::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.price-count-value::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+
+/* 리스트 영역 */
+.price-count-up, .price-count-down{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-count-up .price-updown, .price-count-up .count-updown{
+  font: normal 14px/1 'Nanum Gothic', sans-serif;
+  color: #52b370;
+}
+
+.price-count-down .price-updown, .price-count-down .count-updown{
+  font: normal 14px/1 'Nanum Gothic', sans-serif;
+  color: #d32f2f;
+}
+.price-updown{
+  padding: 8px 0 8px 20px;
+}
+
+.count-updown{
+  padding: 8px 20px 8px 0;
+}
+
+.price-count-up .price-updown{
+  width: 50%;
+  background-color: rgba(82, 179, 112, 0.1);
+}
+
+.price-count-down .price-updown{
+  width: 50%;
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+.price-count-up .count-updown{
+  position: relative;
+  text-align: right;
+  width: 50%;
+}
+
+.price-count-down .count-updown{
+  position: relative;
+  text-align: right;
+  width: 50%;
+}
+
+.price-count-up .count-updown::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(82, 179, 112, 0.25);
+}
+
+.price-count-down .count-updown::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(211, 47, 47, 0.25);
+}
+
+
+

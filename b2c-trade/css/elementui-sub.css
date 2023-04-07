@@ -1,0 +1,507 @@
+@charset "UTF-8";
+/* element ui.css */
+
+/************************************************************ header ********************************************/
+/* 언어 선택 박스 */
+.base-b2c header .el-input__inner {
+  background-color: transparent;
+  border: none;
+}
+
+.base-b2c header .el-scrollbar {
+  width: 200px;
+}
+
+.base-b2c header .el-input.el-input--suffix {
+  width: 90px;
+}
+
+.base-b2c header .el-icon-arrow-up:before {
+  content: url(../images/select_white_icon.svg);
+  position: relative;
+  top: -2px;
+}
+
+.base-b2c header .el-input--suffix .el-input__inner {
+  padding-right: 20px;
+}
+
+.header-down .el-select-dropdown__list {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-down .el-select-dropdown__item {
+  width: 50%;
+}
+
+.header-down .popper__arrow {
+  display: none;
+}
+
+/* 헤더 미디어쿼리 768 */
+@media only screen and (max-width: 768px) {
+  .base-b2c header .el-select {
+    width: 100%;
+  }
+
+  .base-b2c header .el-input__inner {
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+
+  .base-b2c header .el-scrollbar {
+    width: auto;
+  }
+
+  .header-down .el-select-dropdown__item {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .header-down .el-select-dropdown__list {
+    width: auto;
+  }
+
+  .header-down.el-select-dropdown.el-popper {
+    width: 230px;
+  }
+} /* 미디어쿼리 768 */
+
+/* 헤더 미디어쿼리 500 */
+@media only screen and (max-width: 500px) {
+  .header-down.el-select-dropdown.el-popper {
+    width: 190px;
+  }
+} /* 미디어쿼리 768 */
+
+/******************************************************* main ********************************************/
+
+/* 오른쪽 */
+.right-top-tab .el-tabs__header {
+  margin-bottom: 0;
+}
+
+.right-top-tab .el-tabs--card > .el-tabs__header .el-tabs__item,
+.right-top-tab .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.right-top-tab .el-tabs__item {
+  font: bold 14px / normal "Nanum Gothic", sans-serif;
+  color: #222;
+  height: auto;
+}
+
+.right-top-tab .el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item {
+  padding: 0;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.right-top-tab
+  .el-tabs--top.el-tabs--card
+  > .el-tabs__header
+  .el-tabs__item
+  img {
+  vertical-align: middle;
+}
+
+.right-top-tab .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  border-bottom: 2px solid #25263d;
+}
+
+/* 왼쪽아래 1번째 ***********************************************/
+.buy-sell-tab .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  width: 100%;
+}
+
+.buy-sell-tab .el-tabs--card > .el-tabs__header .el-tabs__item {
+  width: 50%;
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+  padding: 13px 0;
+  color: #222;
+  font: normal 14px/1 "Nanum Gothic", sans-serif;
+}
+
+.buy-sell-tab
+  .el-tabs--card
+  > .el-tabs__header
+  .el-tabs__item:first-child.is-active {
+  background-color: #52b370;
+  color: #fff;
+  font-weight: bold;
+}
+
+.buy-sell-tab
+  .el-tabs--card
+  > .el-tabs__header
+  .el-tabs__item:last-child.is-active {
+  background-color: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+}
+
+.buy-sell-tab .el-tabs--card > .el-tabs__header,
+.buy-sell-tab .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: none;
+  margin: 0;
+}
+
+.buy-sell-tab .el-tabs--card > .el-tabs__header .el-tabs__item {
+  transition: none;
+}
+
+.buy-sell-tab .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border-radius: 0;
+}
+/*  왼쪽 아래 2번 탭 ***************************************/
+/* 로그인 전 셀렉트 박스 */
+.buy-sell-log-wrap .el-input__inner {
+  height: 45px;
+  line-height: 45px;
+}
+
+.buy-sell-log-wrap .el-input.is-disabled .el-input__inner {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+}
+
+.buy-sell-log-before,
+.buy-sell-log-before .el-input.el-input--suffix {
+  width: 100%;
+}
+
+.buy-sell-log-before .el-icon-arrow-up:before {
+  content: url(../images/select_grey_icon.svg);
+}
+
+.buy-sell-log-before .el-input.is-disabled .el-input__icon {
+  transform: rotate(360deg);
+}
+
+.buy-sell-log-before .el-input__icon {
+  width: auto;
+  margin-right: 20px;
+}
+
+.buy-sell-log-before .el-input__suffix {
+  right: 0;
+}
+
+/* 로그인 후 셀렉트 박스 */
+.buy-sell-cont.login .buy-sell-log-wrap .el-select {
+  width: 100%;
+}
+
+.buy-sell-cont.login .buy-sell-log-wrap .el-input__inner {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+}
+
+.select-down.el-select-dropdown {
+  border: none;
+  border-top: 1px solid #c4c4c4;
+  box-shadow: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #f7f7f7;
+}
+
+.select-down.el-popper[x-placement^="bottom"],
+.select-down.el-select-dropdown {
+  margin: 0;
+}
+
+.select-down .el-select-dropdown__list {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.select-down .el-select-dropdown__item {
+  width: 100%;
+  padding: 0 10px;
+  color: #222;
+  height: auto;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.buy-sell-log-before .el-icon-arrow-up:before {
+  content: url(../images/select_grey_icon.svg);
+}
+
+.buy-sell-cont.login .el-select .el-input .el-select__caret {
+  transform: none;
+  -webkit-transform: none;
+}
+
+.select-down .popper__arrow {
+  display: none;
+}
+
+/* 라디오 버튼 */
+.buy-sell-radio .el-radio {
+  margin-right: 10px;
+}
+
+.buy-sell-radio .el-radio:last-child {
+  margin-right: 0;
+}
+
+.buy-sell-radio .el-radio__label {
+  padding-left: 5px;
+}
+
+.buy-sell-radio .el-radio__input.is-checked + .el-radio__label {
+  color: #222;
+}
+
+.buy-sell-radio .el-radio__input.is-checked .el-radio__inner {
+  border-color: #222;
+  background: #fff;
+}
+
+.buy-sell-radio .el-radio__inner::after {
+  background-color: #222;
+  width: 8px;
+  height: 8px;
+}
+
+.buy-sell-radio .el-radio__inner {
+  border-color: #222;
+}
+
+/* 주문가격 */
+.buy-count .el-input,
+.buy-price .el-input {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.buy-count .el-input__inner,
+.buy-price .el-input__inner {
+  border: 1px solid #eee;
+}
+
+.buy-sell-cont .el-input-number.is-controls-right .el-input-number__decrease,
+.buy-sell-cont .el-input-number.is-controls-right .el-input-number__increase {
+  border: 0;
+  line-height: 18px;
+}
+
+.buy-sell-cont .el-input-number__decrease,
+.el-input-number__increase {
+  background: #fff;
+}
+
+.buy-price .el-input,
+.buy-price .el-input__inner,
+.buy-price .el-input-number,
+.buy-count .el-input,
+.buy-count .el-input__inner,
+.buy-count .el-input-number {
+  height: 30px;
+  line-height: 28px;
+  width: 205px;
+  text-align: right;
+  color: #222;
+  font-weight: bold;
+}
+
+.buy-count .el-icon-arrow-up:before,
+.buy-price .el-icon-arrow-up:before {
+  content: url(../images/num_up_icon.svg);
+}
+
+.buy-sell-cont.login .buy-count .el-icon-arrow-up:before,
+.buy-sell-cont.login .buy-price .el-icon-arrow-up:before {
+  content: url(../images/num_up_black_icon.svg);
+}
+
+.buy-count .el-icon-arrow-down:before,
+.buy-price .el-icon-arrow-down:before {
+  content: url(../images/num_down_icon.svg);
+}
+
+.buy-count .el-input-number {
+  margin-bottom: 10px;
+}
+
+.buy-percent .el-radio-button__inner {
+  padding: 9px 10px;
+  font: normal 12px/1 "Nanum Gothic", sans-serif;
+  color: #222;
+  border: 1px solid #eee;
+}
+
+.buy-percent .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  background-color: #eee;
+  color: #222;
+  border-color: #eee;
+  box-shadow: -1px 0 0 0 #eee;
+}
+
+.buy-count .el-input.is-active .el-input__inner,
+.el-input__inner:focus,
+.buy-price .el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border: 1px solid #c0c4cc;
+}
+
+.buy-count .el-input-number__decrease,
+.el-input-number__increase,
+.buy-price .el-input-number__decrease,
+.el-input-number__increase {
+  width: 25px;
+}
+
+.buy-count .el-input-number.is-controls-right .el-input__inner,
+.buy-price .el-input-number.is-controls-right .el-input__inner {
+  padding-right: 25px;
+}
+
+.buy-count
+  .el-input-number__decrease:hover:not(.is-disabled)
+  ~ .el-input
+  .el-input__inner:not(.is-disabled),
+.buy-count
+  .el-input-number__increase:hover:not(.is-disabled)
+  ~ .el-input
+  .el-input__inner:not(.is-disabled),
+.buy-price
+  .el-input-number__decrease:hover:not(.is-disabled)
+  ~ .el-input
+  .el-input__inner:not(.is-disabled),
+.buy-price
+  .el-input-number__increase:hover:not(.is-disabled)
+  ~ .el-input
+  .el-input__inner:not(.is-disabled) {
+  border: 1px solid #eee;
+}
+
+/* 왼쪽 아래 3번 *************************************************/
+.my-trade-bottom .el-tabs__nav-scroll {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-trade-bottom .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: none;
+  border-radius: 0;
+  /* margin-left: 76%; */
+}
+
+.my-trade-bottom .el-tabs__item {
+  padding: 18px 21px;
+  height: auto;
+  font: normal 14px/1 "Nanum Gothic", sans-serif;
+}
+
+.my-trade-bottom .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  color: #222;
+  border-bottom: 2px solid #25263d;
+}
+
+.my-trade-bottom .el-tabs--card > .el-tabs__header .el-tabs__item {
+  border-left: 0;
+}
+
+.my-trade-bottom .el-tabs__item:hover {
+  color: #222;
+}
+
+.my-trade-bottom .el-tabs__header {
+  margin-bottom: 0;
+}
+
+.my-trade-bottom .el-tabs__content {
+  height: 350px;
+}
+
+@media only screen and (max-width: 500px) {
+  .my-trade-bottom .el-tabs__item,
+  .my-trade-bottom .el-tabs--card > .el-tabs__header .el-tabs__item,
+  .my-trade-bottom .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+    padding: 18px 10px;
+  }
+
+  .my-trade-bottom
+    .el-tabs--top.el-tabs--card
+    > .el-tabs__header
+    .el-tabs__item:nth-child(2),
+  .my-trade-bottom
+    .el-tabs--top.el-tabs--card
+    > .el-tabs__header
+    .el-tabs__item:last-child {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+} /* 미디어쿼리 */
+
+/******************************************************* footer ********************************************/
+
+/* 푸터 중간 메뉴 */
+.base-b2c footer .el-collapse,
+.base-b2c .el-collapse-item__header,
+.base-b2c .el-collapse-item__wrap {
+  border: none;
+  background-color: transparent;
+}
+
+.base-b2c footer .el-collapse-item__header {
+  height: auto;
+  line-height: 1;
+}
+
+.base-b2c footer .el-collapse-item__content {
+  color: #fff;
+}
+
+.base-b2c footer .el-collapse-item__arrow.is-active,
+.base-b2c .el-collapse-item__arrow {
+  display: none;
+}
+
+.base-b2c footer .el-collapse-item__arrow::before {
+  content: none;
+}
+
+.base-b2c footer .el-collapse-item__content {
+  padding-bottom: 0;
+}
+/* 미디어쿼리 768 */
+@media only screen and (max-width: 768px) {
+  .base-b2c footer .el-collapse-item__header {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .base-b2c footer .el-collapse-item__arrow.el-icon-arrow-right {
+    display: inline-block;
+    color: #fff;
+    transform: rotate(-90deg);
+  }
+
+  .base-b2c footer .el-collapse-item__arrow.is-active,
+  .base-b2c .el-collapse-item__arrow {
+    display: inline-block;
+  }
+
+  .base-b2c footer .el-collapse-item__arrow::before {
+    content: "\e6e0";
+  }
+
+  .base-b2c footer .el-collapse-item__arrow.el-icon-arrow-right.is-active {
+    transform: rotate(90deg);
+  }
+} /* 미디어쿼리 768px */

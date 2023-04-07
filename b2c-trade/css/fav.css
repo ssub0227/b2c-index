@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* fav.css */
+
+/* 상단 즐겨찾기 창 시작 *******************************************************/
+.fav{
+  background-color: #fafbff;
+}
+
+.fav.active .fav-box{
+  display: none;
+}
+
+.fav.active .fav-box-active{
+  display: inline-block;
+  width: 100%;
+}
+
+.fav-box-active{
+  display: none;
+}
+
+/* container 안에 wrap */
+.fav-wrap{
+  position: relative;
+}
+
+/* 더보기 버튼 */
+.fav-about{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transform: rotate(180deg);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.fav-about.active{
+  transform: rotate(0deg);
+}
+
+/* 즐겨찾기 active 전 */
+.fav-box{
+  text-align: center;
+  padding: 13px 0;
+  color: #8e8e8e;
+  font: bold 12px/normal 'Nanum Gothic', sans-serif;
+}
+
+/* 즐겨찾기 active 후 */
+.fav-box-active{
+  padding-top: 10px;
+}
+
+.fav-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fav-list li{
+  width: 200px;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.02);
+}
+
+.fav-list li:last-child{
+  margin-right: 0;
+}
+
+.fav-list-top{
+  position: relative;
+}
+
+.coin-name{
+  color: #222;
+  font: bold 14px/normal 'Nanum Gothic', sans-serif;
+  margin-right: 5px;
+}
+
+.coin-unit{
+  color: #8e8e8e;
+  font: normal 14px/normal 'Nanum Gothic', sans-serif;
+}
+
+.fav-updown{
+  font: bold 12px/normal 'Nanum Gothic', sans-serif;
+}
+
+.fav-updown img{
+  margin-left: 5px;
+}
+
+.fav-coinup .fav-updown{
+  color: #52b370;
+}
+
+.fav-coindown .fav-updown{
+  color: #d32f2f;
+}
+
+/* 즐겨찾기 별 아이콘 */
+.star-icon.fav{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star-icon.fav:first-child{
+  z-index: 1;
+}
+
+.star-icon.fav.active{
+  display: none;
+}
+
+
+@media only screen and (max-width:768px){
+  .fav-list{
+    margin-right: 25px;
+    justify-content: space-between;
+  }
+
+  .fav-list li{
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .fav-list li{
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .fav-list li{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .about-value, .about-tit{
+    display: block;
+    width: 100%;
+  }
+
+  .about-tit{
+    margin-bottom: 5px;
+  }
+}
+
+

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* left-top.css */
+
+.left-top-first{
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 코인 정보 영역 왼쪽 윗줄 */
+.eth-icon{
+  vertical-align: middle;
+}
+
+.about-top a{
+  font: bold 12px/1 'Nanum Gothic', sans-serif;
+}
+
+.about-top a img{
+  margin-left: 3px;
+}
+
+
+/* 코인 정보 영역 왼쪽 아랫줄 */
+.about-bottom{
+  margin-top: 10px;
+}
+
+.coin-updown{
+  font: 800 24px/normal 'Nanum Gothic', sans-serif;
+}
+
+.coin-updown span{
+  font: normal 14px/normal 'Nanum Gothic', sans-serif;
+}
+
+.coin-up .coin-updown, .coin-up .coin-updown span{
+  color: #52b370;
+}
+
+.coin-down .coin-updown, .coin-down .coin-updown span{
+  color: #d32f2f;
+}
+
+
+/* 맨위 코인정보영역 오른쪽 */
+.about-right{
+  width: 70%;
+}
+
+.about-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.about-list li{
+  width: 30%;
+  border-right: 1px solid #eee;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list li:nth-child(3n-1){
+  width: 40%;
+}
+.about-list li:nth-child(n+4){
+  padding-top: 10px;
+}
+
+.about-list li:nth-child(3n){
+  border-right: none;
+  padding-right: 0;
+}
+
+.about-tit, .about-unit{
+  font: normal 12px/normal 'Nanum Gothic', sans-serif;
+  color: #8e8e8e;
+}
+
+.about-unit{
+  margin-left: 5px;
+}
+
+.about-value{
+  font: bold 12px/normal 'Nanum Gothic', sans-serif;
+  color: #222222;
+}
+
+/* 왼쪽 상단 그래프 영역 */
+.left-top-second{
+  background-color: #fff;
+  margin-top: 20px;
+  height: 426px;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width:768px){
+  .left-top-first{
+    display: block;
+  }
+
+  .about-right, .about-list{
+    width: 100%;
+  }
+
+  .about-list{
+    margin-top: 20px;
+  }
+
+  .about-list li:nth-child(1), .about-list li:nth-child(4){
+    padding-left: 0;
+  }
+
+  .left-top-second{
+    margin-bottom: 20px;
+  }
+
+  .about-list li{
+    width: 48%;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+  .about-list li:nth-child(3n){
+    border-right: 1px solid #eee;
+  }
+
+  .about-list li:nth-child(2n){
+    border-right: none;
+  }
+
+  .about-list li:nth-child(3n-1){
+    width: 48%;
+  }
+
+  .about-list li:nth-child(3), .about-list li:nth-child(6),
+  .about-list li:nth-child(1), .about-list li:nth-child(4){
+    padding: 10px 10px 0 10px;
+  }
+} /* 미디어쿼리 768 */
+ 
+

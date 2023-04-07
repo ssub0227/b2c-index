@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* main.css */
+
+/* content 영역 레이아웃  */
+
+.trade-content{
+  background-color: #f6f6f6;
+  padding: 20px 0;
+}
+
+.trade-wrap-top, .trade-wrap-bottom{
+  display: flex;
+}
+
+.trade-wrap-top{
+  margin-bottom: 20px;
+}
+
+.trade-left-top, .trade-left-bottom{
+  width: 840px;
+  margin-right: 20px;
+}
+
+.trade-right-top, .trade-right-bottom{
+  width: 420px;
+}
+
+/* 팝업 */
+.trade-popup-wrap,
+.coin-info-popup-wrap{
+  display: none;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* 거래 진행 팝업 */
+.trade-popup{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 40px 40px 20px 40px;
+  border-radius: 3px;
+}
+
+.trade-popup h2{
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.trade-popup-info{
+  width: 100%;
+}
+
+.trade-popup-info li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.trade-popup-info li:last-child{
+  padding-top: 10px;
+  margin-bottom: 40px;
+  border-top: 1px solid #eee;
+}
+
+.tp-tit{
+  font-size: 14px;
+}
+
+.tp-price{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 거래하기 팝업 버튼 */
+.trade-btn{
+  display: block;
+  padding: 15px 144px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 3px;
+} 
+
+.trade-confirm{
+  background-color: #25263d;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trade-cancle{
+  background-color: #f7f7f7;
+}
+
+/* 코인정보 팝업 */
+.coin-info-popup{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0 30px 30px 30px;
+}
+
+.coin-info-top{
+  padding: 30px 0;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+.coin-info-top h2{
+  font-weight: bold;
+}
+
+.coin-info-top img{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.coin-info-middle{
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding: 30px 0;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.coin-info-bottom{
+  padding-top: 30px;
+}
+
+.coin-info-list{
+  width: 100%;
+}
+
+.coin-info-list li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.coin-info-list li:last-child{
+  margin-bottom: 0;
+}
+
+.ci-tit, .ci-txt{
+  font-size: 12px;
+}
+
+.ci-tit{
+  color: #8e8e8e;
+}
+
+.ci-txt{
+  color: #222;
+}
+
+@media only screen and (max-width:768px){
+  .trade-wrap-top, .trade-wrap-bottom{
+    display: block;
+  }
+
+  .trade-right-top, .trade-right-bottom,
+  .trade-left-top, .trade-left-bottom{
+    width: 100%;
+  }
+
+  /* 거래하기 팝업 */
+  .trade-popup{
+    width: 75%;
+  }
+
+  .trade-btn{
+    padding: 15px 30%;
+  }
+
+  /* 코인정보 팝업 */
+  .coin-info-popup{
+    width: 70%;
+  }
+
+
+} /* 미디어쿼리 768px */
+
+
+@media only screen and (max-width:500px){
+  .trade-popup{
+    width: 75%;
+  }
+
+  .trade-popup-info li{
+    flex-wrap: wrap;
+  }
+
+  .trade-popup-info li>span{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* 코인정보 팝업 */
+  .coin-info-popup{
+    width: 80%;
+  }
+} /* 미디어쿼리 500px */

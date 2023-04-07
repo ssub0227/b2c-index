@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* footer.css */
+
+footer{
+	background-color: #101127;
+}
+
+footer>*{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 푸터 탑 영역 */
+.footer-top{
+  background-color: #f2f3f8;
+}
+
+.footer-top-text{
+  display: flex;
+  padding:55px 0;
+  align-items: center;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.footertop-text-left{
+  font-size: 26px;
+  color: #222;
+  font-weight: 800;
+}
+
+.footertop-text-right{
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+  text-align: right;
+}
+
+.footertop-text-right span{
+  color: #f69e00;
+}
+
+.footer-middle{
+	border-bottom: 1px solid #415165;
+	padding:31px 0 30px 0;
+}
+
+.footer-middle-list{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.round-btn{
+	vertical-align: middle;
+	transform: rotate(-90deg);
+	transition: .5s;
+}
+
+.round-btn.active{
+	transform: rotate(0deg);
+}
+
+.footer-middle-list li{
+	flex: 1;
+}
+
+.footer-middle-list li:last-child{
+	text-align: center;
+}
+
+.footer-middle-list a{
+	position: relative;
+	color: #fff;
+	font-size: 18px;
+}
+
+.footer-middle-list li a::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  background-color: #fff;
+  bottom: -1px;
+  left: 50%;
+  transition: .4s;
+}
+
+.footer-middle-list li:hover a::after, .footer-middle-list li.active a::after{
+  left: 0;
+  width: 100%;
+}
+
+.footer-middle-list li:last-child:hover a::after{
+	content: none;
+}
+
+.footer-middle-sub-list{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-middle-sub-list li{
+	font-size: 14px;
+	flex: 1;
+	line-height:1.5;
+	margin-bottom: 5px;
+}
+
+.footer-middle-sub-list > li:nth-child(4), .footer-middle-sub-list > li:nth-child(7){
+	margin-right: 142px;
+}
+
+.footer-middle-sub-list h3{
+	color: #fff;
+}
+
+.footer-middle-sub-list a{
+	color: #999;
+}
+
+/* 푸터 바텀 영역 시작 */
+.footer-bottom{
+	padding-top: 50px;
+}
+
+.footer-bottom-wrap{
+	display: flex;
+}
+
+.footer-text-wrap{
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.footer-bottom img{
+	margin-bottom:auto;
+	margin-right: 80px;
+}
+
+/* 푸터 하단 영역 시작 */
+.footer-ltd{
+	font-size: 12px;
+	color: #ccc;
+	text-align: center;
+	padding:20px 0;
+	background-color: #070818;
+	letter-spacing: -0.8px;
+	margin-top: 46px;
+}
+
+.footer-text-top{
+	color: #fff;
+}
+
+.footer-text-bottom{
+	color: #f69e00;
+}
+
+
+/* 미디어쿼리 768 */
+@media only screen and (max-width:768px){
+  .footer-top-text{
+		display: block;
+	}
+	
+	.footertop-text-left, .footertop-text-right{
+		text-align: center;
+	}
+	
+	.footertop-text-right{
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.footer-middle.mb{
+		display: block;
+	}
+
+	.footer-middle-list-mb{
+		width: 100%;
+	}
+
+	.footer-middle-list-mb li{
+		padding: 20px 0;
+	}
+
+	.footer-middle-list-mb a{
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.footer-middle-list-mb ul a{
+		color: #ccc;
+		font-size: 14px;
+	}
+
+	.footer-middle-list-mb h3{
+		color: #fff;
+		font-size: 14px;
+	}
+
+	.footer-middle-list-mb ul{
+		padding-left: 20px;
+		margin-top: 10px;
+	}
+
+	.footer-bottom img{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.footer-text-wrap{
+		font-size: 10px;
+	}
+
+	.footer-bottom-wrap{
+		display: block;
+	}
+} /* 미디어쿼리 768 */
+
+
+/* 미디어쿼리 500 */
+@media only screen and (max-width:500px){
+	.footertop-text-left{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.footertop-text-right{
+		font-size: 13px;
+	}
+
+	.footer-top-text span{
+		display: block;
+	}
+} /* 미디어쿼리 500 */

@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* left-top.css */
+
+/* 레이아웃 설정 */
+.trade-left-bottom{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-bottom-first{
+  width: 410px;
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.left-bottom-second{
+  /* border: 1px solid darkblue; */
+  width: 410px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.left-bottom-third{
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+
+/* 1번 체결내역 시작 ************************************************************************************8*/
+.amount-tit{
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+  font: bold 14px/1 'Nanum Gothic', sans-serif;
+  color: #222;
+}
+
+/* 체결내역 테이블 시작 */
+
+.amount-table{
+  display: block;
+  width: 100%;
+}
+
+.amount-table thead{
+  display: block;
+  cursor: pointer;
+}
+.amount-table thead th{
+  font: normal 12px/1 'Nanum Gothic', sans-serif;
+  color: #8e8e8e;
+}
+
+.amount-table tbody{
+  display: block;
+  overflow-y: scroll;
+  height: 555px;
+}
+
+.amount-table tbody::-webkit-scrollbar{
+  width:5px;
+  background-color: transparent;
+}
+
+.amount-table tbody::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.amount-table tbody::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+.amount-table tbody td:nth-child(1), .amount-table thead th:nth-child(1){
+  width: 136px;
+}
+
+.amount-table tbody td:nth-child(2), .amount-table thead th:nth-child(2){
+  width: 136px;
+  text-align: right;
+}
+.amount-table tbody td:nth-child(3), .amount-table thead th:nth-child(3){
+  width: 136px;
+  text-align: right;
+}
+
+.amount-table thead th{
+  padding: 9px 25px 9px 20px;
+}
+
+.amount-table tbody tr{
+  display: block;
+  padding: 0 25px 0 20px;
+}
+
+.amount-table tbody td{
+  padding: 8px 0;
+  color: #222;
+  font: normal 14px/1 'Nanum Gothic', sans-serif;
+}
+
+.amount-up .amount-updown{
+  color: #52b370;
+}
+
+.amount-down .amount-updown{
+  color: #d32f2f;
+}
+
+/* 2번 매수 매도 시작 *******************************************************************************/
+
+
+/* 매도버튼 */
+.sell-btn.active{
+  background-color: #d32f2f;
+}
+
+/* 2번영역 컨텐츠 */
+.buy-sell-cont{
+  background-color: #fff;
+  width: 100%;
+  height: 585px;
+  padding: 20px;
+}
+
+.buy-sell-cont li{
+  text-align: right;
+}
+
+.buy-sell-cont h3{
+  font-size: 14px;
+  color: #222;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.buy-sell-cont li:first-child h3{
+  margin-top: 0;
+}
+
+.buy-sell-fee h3{
+  color: #8e8e8e;
+}
+
+.buy-sell-price-unit{
+  display: block;
+}
+
+.buy-sell-price{
+  font: bold 14px/1 'Nanum Gothic', sans-serif;
+  color: #222;
+}
+
+.buy-sell-price-unit .coin-unit{
+  margin-left: 10px;
+}
+
+/* 라디오 버튼 */
+.buy-sell-radio{
+  margin-top: 20px;
+}
+
+/* 로그인 버튼 */
+.buy-btn, .sell-btn{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+/* 로그인버튼 */
+.buy-btn{
+  background-color: #52b370;
+}
+
+.sell-btn{
+  background-color: #d32f2f;
+}
+
+
+/* 시장가 선택시 */
+.buy-sell-least{
+  display: none;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.coin-least{
+  color: #222;
+}
+
+/* 시장가 선택시 주문가격 안보이게 */
+.buy-sell-cont.login .active{
+  display: none;
+}
+
+
+/* 3번 my거래내역 시작 *******************************************************************************/
+.my-trade-top{
+  background-color: #fff;
+  position: relative;
+}
+
+.my-trade-tit{
+  position: absolute;
+  padding: 18px 0 17px 20px;
+  color: #222;
+  font: bold 16px/1 'Nanum Gothic', sans-serif;
+}
+
+/* 거래내역 컨텐츠 영역 */
+/* 로그인 전 */
+.my-trade-login{
+  color: #8e8e8e;
+  font: normal 14px/1 'Nanum Gothic', sans-serif;
+  text-align: center;
+  padding-top: 168px;
+}
+
+/* 로그인 후 미체결계약 */
+.my-trade-not-signed{
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 133px;
+}
+
+.my-trade-not-signed img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* 로그인 후 체결계약 */
+.my-trade-signed{
+  padding: 20px 12px 0 12px;
+  width: 100%;
+}
+
+.my-trade-signed table{
+  width: 100%;
+  display: block;
+  border-top: 1px solid #25263d;
+  border-bottom: 1px solid #eee;
+}
+
+.my-trade-signed table td{
+  text-align: center;
+  font-size: 12px;
+  color: #222;
+}
+
+.my-trade-signed table td .coin-unit{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.my-trade-signed tbody td:nth-child(2) .coin-unit{
+  color: #222;
+}
+
+.my-trade-signed thead tr{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+.my-trade-signed thead th{
+  color: #222;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.my-trade-signed tbody tr, .my-trade-signed thead tr{
+  padding: 9px 0;
+}
+
+.my-trade-signed tbody tr:nth-child(2n){
+  background-color: #fafbff;
+}
+
+.my-trade-signed table tr, .my-trade-signed thead, .my-trade-signed tbody{
+  display: block;
+}
+
+.my-trade-signed tbody{
+  display: block;
+  overflow-y: scroll;
+  height: 280px;
+}
+
+.my-trade-signed td:nth-child(1), .my-trade-signed th:nth-child(1){
+  width: 163px;
+}
+.my-trade-signed td:nth-child(2), .my-trade-signed th:nth-child(2){
+  width: 70px;
+}
+.my-trade-signed td:nth-child(3), .my-trade-signed th:nth-child(3){
+  width: 70px;
+}
+.my-trade-signed td:nth-child(4), .my-trade-signed th:nth-child(4){
+  width: 70px;
+}
+.my-trade-signed td:nth-child(5), .my-trade-signed th:nth-child(5){
+  width: 163px;
+}
+.my-trade-signed td:nth-child(6), .my-trade-signed th:nth-child(6){
+  width: 163px;
+}
+.my-trade-signed td:nth-child(7), .my-trade-signed th:nth-child(7){
+  width: 140px;
+}
+
+.my-trade-signed td:last-child, .my-trade-signed th:last-child{
+  padding-right: 5px;
+}
+
+.my-trade-signed tbody::-webkit-scrollbar{
+  width:5px;
+  background-color: transparent;
+}
+
+.my-trade-signed tbody::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.my-trade-signed tbody::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+/* 3번 모바일 리스트 ****************************************************************/
+.my-trade-list{
+  width: 100%;
+}
+
+.my-trade-list > li{
+  padding: 10px;
+}
+
+.my-trade-list > li:nth-child(2n){
+  background-color: #fafbff;
+}
+
+.my-trade-sub-list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: bold;
+}
+.my-trade-sub-list span{
+  font-weight: normal;
+}
+.my-trade-sub-list .coin-unit{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.my-trade-sub-list  li:nth-child(2) .coin-unit{
+  color: #222;
+}
+
+
+
+@media only screen and (max-width:768px){
+  .trade-left-bottom{
+    display: block;
+  }
+
+  .left-bottom-first{
+    width: 100%;
+  }
+
+  .amount-table tbody td:nth-child(1), .amount-table thead th:nth-child(1),
+  .amount-table tbody td:nth-child(2), .amount-table thead th:nth-child(2),
+  .amount-table tbody td:nth-child(3), .amount-table thead th:nth-child(3){
+    width: 243px;
+    text-align: center;
+  }
+
+  .amount-table tbody tr{
+    padding: 0 5px 0 0;
+  }
+
+  .left-bottom-second{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .left-bottom-third{
+    margin-bottom: 20px;
+  }
+
+  .buy-sell-cont{
+    height: 100%;
+  }
+
+  /* 3번 모바일일떄 */
+  .my-trade-signed{
+    overflow-y: scroll;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .my-trade-signed::-webkit-scrollbar{
+    width:5px;
+    background-color: transparent;
+  }
+  
+  .my-trade-signed::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 5px;
+  }
+  
+  .my-trade-signed::-webkit-scrollbar-track{
+    background-color: #fff;
+  }
+
+} /* 미디어쿼리 768 */
